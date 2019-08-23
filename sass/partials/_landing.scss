@@ -1,0 +1,97 @@
+
+.landing{
+
+
+.btn, .btnb{
+
+	border-radius:0;
+	}
+
+
+.about-chart{
+	p{
+	margin:0;
+	}
+	ul{
+	li{
+	color:$roboto;
+	i{
+	color:$green;
+	padding-right:10px;
+	}
+	}
+	}
+}
+
+.enough{
+	background-color:$footb;
+	h1, p{
+	color:#fff;
+	}
+	.btn, .btnb{
+		margin:10px;
+	}
+	h1{
+	margin:0;
+	}
+	
+	}
+.banner{
+	
+	.carousel-caption{
+	h1{
+	font-size:40px;
+	margin:0;
+
+	}
+	h1, p{
+	color:#000;
+	}
+	p{
+	margin-bottom:20px;
+	}
+	.btn, .btnb{
+	margin: 10px 10px;
+	border-radius:0;
+	}
+	}
+	.land{
+	bottom:20%;
+	}
+}
+
+.pricing-table{
+	background-color:#fff;
+}
+.faq{
+	background-color:$par;
+	
+}
+.contact{
+	#map{
+	height:300px;
+	width:100%;
+	}
+	.form-control{
+	width:90%;
+	margin:10px 0;
+
+}
+.msg{
+	width:83%;
+	height:120px;
+	}
+}
+
+
+}
+.footer{
+	.btn{
+	border-radius:0;
+	}
+	.form-control {
+	border-radius:0px;
+	max-width:75%;
+	padding-right: 20px;
+	}
+}

@@ -1,0 +1,223 @@
+body{
+	background-color:#e5e5e5;
+}
+
+.header{
+.logo, .bottom-menu{
+	background-color:#fff;
+
+}
+hr{
+	margin:0;
+}
+
+.top-menu{
+.inline,  .icon-inline {
+ul{
+margin:0;
+	li{
+
+	display:inline-block;
+	padding:5px 10px;
+	font-size:14px;
+	}
+}	
+}
+background-color:#000;
+margin:0px;
+padding:0px;
+	font-size:14px;
+
+	
+
+	a{color:#fff;}
+}
+
+}
+hr{
+	margin:0px;
+	margin-bottom:10px;
+}
+
+.news{
+	.back{
+	position:relative;
+	h1{
+	font-size:60px;
+	}
+}
+
+	
+	.front{
+	position:absolute;
+	z-index:1000;
+	bottom:0;
+	color:#fff;
+	padding-left: 10px;
+	
+	width: 100%;
+	}
+	.grad{
+
+ 
+    background: linear-gradient(trasparent, #fff); /* Standard syntax (must be last) */
+	}
+}
+
+
+.trending{
+		.rblock{
+	background-color:#fff;
+	}
+	.text{
+	max-width:80%;
+	}
+	.card-body{
+	border:1px solid #e5e5e5;
+	}
+	.sm-text{
+	color:#000;
+	}
+	.sidebar{
+	background-color:#fff;
+	}
+	hr{
+	padding-bottom:10px;
+	}
+		a{
+	color:#fff;
+	padding-left:10px;
+	}
+	.count{
+	font-size:16px;
+	color:#fff;
+	}
+}
+.Entertainment{
+	background-color:#fff;
+}
+
+.latest{
+	h3, h5, p{
+	color:#fff;
+	}
+	.card{
+	background-color:$footb;
+
+	}
+	background-color:$footb;
+
+}
+
+	h4{
+	margin:0;
+	}
+
+	.fb{
+	background-color:#3b5998;
+
+
+	}
+	.fb{
+	background-color:#3b5998;
+
+
+	}
+	.fb{
+	background-color:#3b5998;
+	}
+	.in{
+	background-color:#C32AA3;
+	}
+	.yt{
+	background-color:#FF0000;
+	}
+	.tw{
+	background-color:#0084b4;
+	}
+	.fl-r{
+	float:right;
+	padding-right:10px;
+	}
+
+
+//blog common
+
+
+h3{
+	margin:0;
+}
+	.quote, .quote2{
+	p{
+	margin:0;
+	}
+	padding:20px;
+	background-color:#e5e5e5;
+	
+	}
+	.icon-button{
+	a{
+	color:#fff;
+	}
+	}
+	.quote
+	{
+	border-left:6px solid #000;
+	}
+	
+	.sm-text{
+	font-size:16px;
+	color:#e5e5e5;
+	margin-bottom:20px;
+	}
+	.msg{
+	height:70px;
+	}
+
+.cmt{
+	max-height:90px;
+	max-width:110px;
+	}
+//blog left
+
+.blog-left, .blog-single, .blog-right, .blog-card{
+background-color:#fff;
+
+
+	.card{
+	border:1px solid #e5e5e5;
+	}
+.form-control{
+	max-width:82%;
+	padding-right:33px;
+	margin:0;
+	}
+
+	.side-form{
+	.btn{
+	position: absolute;
+	right: 22%;
+	background-color:#fff;
+	padding: 5px;
+	i{
+	color:#000;
+	}
+	}
+	}
+
+	.category{
+	.count{
+	color:$blue;
+	font-size:16px;
+	}
+	}
+	}
+	
+
+
+
+
+
+
+
+//blog-single

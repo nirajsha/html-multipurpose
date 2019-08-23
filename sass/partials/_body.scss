@@ -1,0 +1,180 @@
+
+.text{
+
+	padding:0;
+	margin:0;
+}
+
+.title-text{
+
+	padding:0;
+	margin:0;
+}
+.sm-text{
+	font-size:12px;
+	color:#fdfdfd;	
+	padding-bottom:0;
+	margin:0;
+	font-style: italic;
+}
+.blog{
+h4{
+	margin:0px;
+	}
+	
+}
+a:hover{
+	color:$blue;
+	text-decoration:none;
+	}
+.sub-text{
+	font-size:12px;
+	color:#e5e5e5;
+	padding-bottom:10px;
+}
+
+
+
+
+
+
+
+/*couter*/
+.count{
+	color:$green;
+	font-size:30px;
+}
+.counter{
+	background-color:$light-black;
+}
+.count-text{
+	color:white;
+}
+.icon-counter{
+	color:white;
+	font-size:30px;
+}
+
+.portfolio-grid{
+	position: relative; 
+	height: 497.434px;
+}
+
+.isotop  li{
+float:left;
+padding-right:15px;
+	display:inline-block;
+}
+
+
+	
+
+
+.media-body{
+	top:10px;
+}
+
+
+.card-body h5{
+	
+	margin:0px;
+	padding:0px;
+}
+.card{
+	border:none;
+}
+
+.card-body{
+	padding:0px;
+	padding-top:10px;
+}
+
+
+.pricing-table{
+	h3{
+	font-weight:300;
+	padding-bottom:10px;
+	}
+
+	.price{
+	color:$green;
+	font-weight:400;
+	}
+	li{
+	color:#d3d3d3;
+	i{
+	color:$green;
+	padding-right:20px;
+	}
+	}
+
+	.card{
+	 box-shadow: 5px 10px 18px #888888;
+	}
+
+	.blue{
+	.price{
+	color:$blue;
+	}
+	li{
+	color:#d3d3d3;
+	i{
+	color:$blue;
+	padding-right:20px;
+	}
+	}
+	
+
+	}
+
+
+
+	
+}
+
+
+//divider
+.line{
+		border-bottom: 1px solid #e5e5e5;
+		
+	}
+
+
+.banner{
+		.carousel-caption{
+			right:15%;
+			bottom:120px;
+			left:15%;
+		}
+	}		
+
+
+	.testimonial{
+		h1{
+		color:#fff;
+		}
+		p{
+		color:#fff;
+		width:75%;
+		margin:0 auto;
+}
+		.text{
+		margin-bottom:0px;
+
+		}
+		.carousel-item{
+
+			margin:0 auto;
+		}
+	
+		i{
+		font-size:40px;
+		color:$green;
+		
+		}
+		.carousel-indicators{
+		bottom:-40px;
+		}
+
+
+	}

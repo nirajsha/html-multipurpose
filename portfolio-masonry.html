@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Multipurpose Website">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fullscreen.css">
+    <title>Annapurna Adventure Team</title>
+    <style>
+     
+
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
+$bg: #4F000B;
+$itemBg1: #720026;
+$itemBg2: #CE4257;
+$itemBg3: #FFC093;
+$itemBg4: #FF7F51;
+$counterBg: #222;
+
+@mixin setColorAndHover($baseColor) {
+  color: $baseColor;
+  &:hover {
+    background: lighten($baseColor, 8%);
+  }
+}
+
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $bg;
+  font-family: "PT Mono", monospace;
+}
+
+.masonry {
+  column-count: 1;
+  column-gap: 0;
+  counter-reset: item-counter;
+  
+  @media screen and (min-width: 400px) {
+    column-count: 2;
+  }
+  
+  @media screen and (min-width: 600px) {
+    column-count: 3;
+  }
+  
+  @media screen and (min-width: 800px) {
+    column-count: 4;
+  }
+  
+  @media screen and (min-width: 1100px) {
+    column-count: 5;
+  }
+}
+
+.item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  padding: 10px;
+  counter-increment: item-counter;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    font-size: 40px;
+    color: darken($bg, 5%);
+    background: currentColor;
+    box-sizing: border-box;
+    @include setColorAndHover($itemBg1);
+    
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 13px;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      font-weight: bold;
+      background-color: $counterBg;
+      content: counter(item-counter);
+    }
+    
+    &:after {
+      color: darken($bg, 10%);
+      content: 'ಠ‿ಠ';
+    }
+    
+    &--small {
+      @include setColorAndHover($itemBg2);
+      height: 100px;
+      
+      &:after {
+        content: '♥◡♥';
+      }
+    }
+    
+    &--medium {
+      @include setColorAndHover($itemBg3);
+      height: 175px;
+      
+      &:after {
+        content: '◔ᴗ◔';
+      }
+    }
+    
+    &--large {
+      @include setColorAndHover($itemBg4);
+      height: 280px;
+      
+      &:after {
+        content: 'ಠ_๏';
+      }
+    }
+  }
+}
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-2">
+          <!-- Website Logo -->
+          <a class="navbar-brand" href="#"><img src="image/logo.png"></a>
+          <!-- responsive -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span><i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <!-- Menu Section -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+              <!-- Home -->
+              <li class="nav-item dropdown h">
+                <a class="nav-link p-4 head-menu " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                <!-- Home Dropdown -->
+                <div class="dropdown-menu">
+                  
+                  <a class="dropdown-item" href="#">Fullscereen</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Boxed</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Parallax</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Landing Page</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Magzine</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">E-Commerce</a>
+                </div>
+              </li>
+              <!-- Page -->
+              <li class="nav-item dropdown">
+                <a class="nav-link head-menu p-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
+                <!-- Page Dropdown -->
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">About Us</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Services</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Team</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Login/Register</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Comming Soon</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Blank Page</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">FAQ</a>
+                </div>
+              </li>
+              <!-- Blog -->
+              <li class="nav-item dropdown">
+                <a class="nav-link head-menu p-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                <!-- Blog Dropdown -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">List</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Masonry</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Card</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Single</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Single Sidebar-left</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Single Sidebar-right</a>
+                </div>
+              </li>
+              <!-- Portfolio -->
+              <li class="nav-item dropdown">
+                <a class="nav-link head-menu p-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                <!-- portfolio dropdown -->
+                <div class="dropdown-menu py-2" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Card</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Masonry</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Single</a>
+                </div>
+              </li>
+              <!-- shop -->
+              <li class="nav-item dropdown">
+                <a class="nav-link head-menu p-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                <!-- shop dropdown -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">List</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Grid</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Product Details</a>
+                  <div class="line"></div>
+                  <a class="dropdown-item" href="#">Cart</a>
+                </div>
+              </li>
+              <!-- Search and cart -->
+              <li class="nav-item head-icon">
+                <a class="nav-link  head-menu" href="#" role="button"><i class="fa fa-search" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item head-icon">
+                <a class="nav-link  head-menu" href="#" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+            </div><!-- End collapse -->
+            </nav><!-- End of nav -->
+            </div><!-- End container -->
+          </header>
+          <section class="page-title">
+              <img  class="img-fluid" src="image/head.png" alt="">
+            <div class="page-text">
+              <h1>Portfolio Masonry</h1>
+              <p>Home / Portfolio / Masonry</p>
+            </div>
+            
+          </section>
+          <main>
+            <div class="masonry">
+  <div class="item">
+    <div class="item__content">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--small">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--medium">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--small">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--medium">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--large">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--medium">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--small">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--large">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--small">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--large">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--medium">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--small">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--medium">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content">
+    </div>
+  </div>
+  <div class="item">
+    <div class="item__content item__content--small">
+    </div>
+  </div>
+</div>
+          </main>

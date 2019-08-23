@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol{
+	list-style-type: none;
+}
+
+a{
+	outline: 0;
+}
+
+p{
+	line-height:1.5;
+	font-family: roboto;
+	color:$roboto;
+	font-weight:300;
+	font-size:16px;
+	margin-bottom:20px;
+}
+.bd{
+	
+	border: 1px solid #e5e5e5;
+	
+	
+}

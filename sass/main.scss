@@ -1,0 +1,27 @@
+/*Base- base style, variables, mixins etc*/
+
+@import 'partials/variables';
+@import 'partials/mixins';
+
+/*Modules- Individual site components*/
+
+@import 'partials/fonts';
+@import 'partials/heading';
+@import 'partials/icons';
+
+@import 'partials/buttons';
+
+
+
+
+@import 'partials/common';
+@import 'partials/image';
+@import 'partials/form';
+@import 'partials/sections';
+@import 'partials/header';
+
+
+@import 'partials/body';
+@import 'partials/footer';
+@import 'partials/placeholder';
+@import 'partials/responsive';

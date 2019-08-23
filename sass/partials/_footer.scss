@@ -1,0 +1,44 @@
+.main-footer{
+	background-color:$foota;
+
+
+
+	.line{
+		border-bottom: 1px dashed #e5e5e5;
+		padding: 10px 0;
+
+  		display: inline-block;
+	}
+	.line:last-child {
+    border:none;
+}
+	
+	h5{
+		color:#fff;
+	}
+	
+	p{
+		color: #fff;
+	}
+	.form-control{
+	max-width:82%;
+	padding-right:33px;
+	}
+}
+
+.sub-footer{
+	background-color:$footb;
+	p{
+	color:white;
+	font-size:12px;
+		a{
+		text-decoration:none;
+		color:white;
+
+		}
+	}
+
+}
+.subscribe{
+	text-decoration:italic;
+}

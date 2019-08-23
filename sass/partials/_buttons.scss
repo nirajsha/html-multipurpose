@@ -1,0 +1,53 @@
+.btn{
+	background-color:$green;
+	color:white;
+	border:none;
+	border-radius:21px;
+	padding:6px 15px;
+	
+}
+.btn:hover{
+	background-color:$light_green;
+}
+.btn:focus{
+	background-color:$dark_green;
+	box-shadow:none;
+}
+
+.btnb{
+	background-color:$blue;
+	color:white;
+	border:none;
+	border-radius:21px;
+	padding:6px 15px;
+	
+}
+.btnb:hover{
+	background-color:$light_blue;
+}
+.btnb:focus{
+	background-color:$dark_blue;
+	box-shadow:none;
+}
+
+.sr-only{
+	font-size:30px;
+}
+
+.filter{
+	.btn{
+	 background:none;
+	 border:none;
+	 color:$blue;
+	}
+	.btn:focus{
+	text-decoration:underline;
+}
+	
+}
+
+	.carousel-indicators li{
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	}
